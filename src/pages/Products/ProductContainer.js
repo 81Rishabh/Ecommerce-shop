@@ -8,7 +8,9 @@ function ProductContainer(props) {
   const [size , setSize] = useState(window.innerWidth);
   const { filterProducts } = useSelector((state) => state.products);
   const dispatch = useDispatch();
-  
+
+
+ 
   // fetching all the products
   useEffect(() => {
     dispatch(fetchProducts());

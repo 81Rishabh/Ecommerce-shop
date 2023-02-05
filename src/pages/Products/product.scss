@@ -22,15 +22,16 @@ section#product-container {
     justify-content: flex-start;
     align-items: center;
     position: sticky;
-    top: 3%;
+    top: 12.4%;
     z-index: 11;
-    width: 70%;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
 
     .filterIcon {
         display: flex;
         align-items:center;
         margin-left: 1rem;
-        cursor: pointer;
         background:rgb(240, 240, 240);
         padding:.5rem;
         border-radius: 50px;
@@ -39,6 +40,7 @@ section#product-container {
         outline: 2px solid rgb(208, 208, 255);
         outline-offset: 1px;
         opacity: .7;
+        cursor: pointer;
 
         &:hover {
             opacity: 1;
@@ -215,11 +217,10 @@ section#product-container {
     .search_bar_container {
        width: auto;
        justify-content: center;
-       padding-left: 0;
-       top:12%;
+       padding-left: 10px;
        background-color: #fff;
+       top: 12.1%;
        border-bottom: 1px solid lightgrey;
-
       .search_bar_wrapper {
         width: 80%;
       }
