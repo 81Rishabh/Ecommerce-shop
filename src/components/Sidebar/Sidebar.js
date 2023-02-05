@@ -29,7 +29,7 @@ function Sidebar({ open }) {
       inputRangeRef.current.value = Math.floor(getMaxPrice / 2);
       setmidPrice(Math.floor(getMaxPrice / 2));
     }
-  }, [isReset]);
+  }, [isReset ,getMaxPrice]);
 
   // create checkbox event handler
   const handleCheckBox = (isChecked, value, slug) => {
