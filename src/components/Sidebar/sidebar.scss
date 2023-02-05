@@ -1,0 +1,107 @@
+:root {
+  --bg-light: #fff;
+  --text-dark: #1b1b1b;
+  --text-dark-mid: rgb(113, 113, 113);
+  --text-primary: rgb(18, 42, 174);
+}
+
+div#sidenav {
+  width: 250px;
+  background-color: var(--bg-light);
+  padding: 0.5rem;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+  border-top: 1px solid rgb(222, 240, 255);
+  overflow-y: scroll;
+  transition: all .2s ease-in-out;
+
+  #sidebar-header {
+    display: inline-flex;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    align-items: center;
+    width: 100%;
+
+    .title {
+      font-size: 1rem;
+      color: var(--text-dark);
+      opacity: 0.7;
+      margin-left: 5px;
+    }
+  }
+
+  .filter-container {
+    padding-left: 1rem;
+    
+    
+    .filter-title {
+      font-size: 0.9rem;
+      color: var(--text-dark-mid);
+      font-weight: 600;
+    }
+    
+    ul {
+      padding-left: 10px;
+      // height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .filter-list-item {
+        display: inline-flex;
+        width: 100%;
+        justify-content: flex-start;
+
+        .value {
+          margin-left: 14px;
+          color: var(--text-dark-mid);
+        }
+
+
+      }
+    }
+    
+    .filter-price-range {
+      display: grid;
+      grid-template-columns: 160px auto;
+      text-align: center;
+      .price {
+        margin-left: 10px;
+        // background-color: whitesmoke;
+        padding: .5rem;
+        font-size: small;
+        color: blueviolet;
+        border: 1px solid rgb(208, 158, 254);
+        border-radius: 5px;
+        
+      }
+    }
+
+    #clear-button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 0.5rem 0;
+      border: 2px solid #956eff;
+      cursor: pointer;
+      background: transparent;
+      color: #6d38fd;
+      font-weight: 600;
+      transition: transform 0.2s ease;
+      border-radius: 50px;
+      &:hover {
+        transform: scale(0.99);
+        background-color:#6b35fe;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 600px) {
+  #sidenav {
+    transform:  translateX(-400px);
+    z-index: 12;
+  }
+}

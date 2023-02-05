@@ -1,0 +1,29 @@
+input[type="checkbox"] {
+    position: absolute;
+    transform: scale(0);
+    
+    &:checked {
+        background: #1ac0a2;
+    }
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+  .checkbox {
+    display: grid;
+    place-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 2.5px;
+    background-color: rgb(235, 235, 235);
+    outline: 2px solid rgb(192, 202, 255);
+    outline-offset: 1px;
+    transition: all 0.4s linear;
+  }
+  
+  .checkbox-tick {
+    display: none;
+  }
+  
