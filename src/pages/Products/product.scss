@@ -22,7 +22,8 @@ section#product-container {
     justify-content: flex-start;
     align-items: center;
     position: sticky;
-    top: 12.4%;
+    // top: 12.4%;
+    top: 101px;
     z-index: 11;
     width: 100%;
     background-color: #fff;
@@ -219,7 +220,6 @@ section#product-container {
        justify-content: center;
        padding-left: 10px;
        background-color: #fff;
-       top: 12.1%;
        border-bottom: 1px solid lightgrey;
       .search_bar_wrapper {
         width: 80%;
